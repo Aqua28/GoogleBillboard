@@ -6,7 +6,14 @@ public void setup()
 	 String digits = e.substring(beginIndex, beginIndex+10);
 	 double dNum = Double.parseDouble(digits);
 	 System.out.println(dNum);
-}
+	 	}
+
+	 	for(int i =0; i<10; i++)
+	 	{
+	 		if (double dNum == true)
+	 		return dNum;
+	 	}
+
 }  
 public void draw()  
 {   
@@ -14,6 +21,13 @@ public void draw()
 }  
 public boolean isPrime(double dNum)  
 {   
-    //to be finished later   
-    return true;  
+    if (dNum <2)
+  return false;
+  
+  for (int i = 2; i<= Math.sqrt(dNum); i++)
+  {
+  if (dNum%i == 0)
+  return false;
+  }  
+  return true;  
 } 
